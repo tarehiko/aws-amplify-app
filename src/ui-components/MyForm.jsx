@@ -52,7 +52,7 @@ export default function MyForm(props) {
                 return;
             }
             await onSubmit(modelFields);
-        }} {...getOverrideProps(overrides, "MyForm")} {...rest}><Text children="Plese input your name " {...getOverrideProps(overrides, "SectionalElement0")}></Text><TextField label="Name" placeholder="Input your name..." value={Field0} onChange={e => {
+        }} {...getOverrideProps(overrides, "MyForm")} {...rest}><Text children="あなたの氏名を入れて下さい" {...getOverrideProps(overrides, "SectionalElement0")}></Text><TextField label="Name" placeholder="Input your name..." value={Field0} onChange={e => {
             let { value } = e.target;
             if (onChange) {
                 const modelFields = {
@@ -66,7 +66,7 @@ export default function MyForm(props) {
                 runValidationTasks("Field0", value);
             }
             setField0(value);
-        }} onBlur={() => runValidationTasks("Field0", Field0)} errorMessage={errors.Field0?.errorMessage} hasError={errors.Field0?.hasError} {...getOverrideProps(overrides, "Field0")}></TextField><Text children="Tell me your age" {...getOverrideProps(overrides, "SectionalElement1")}></Text><TextField label="Age" placeholder="Input your age..." type="number" step="any" value={Field1} onChange={e => {
+        }} onBlur={() => runValidationTasks("Field0", Field0)} errorMessage={errors.Field0?.errorMessage} hasError={errors.Field0?.hasError} {...getOverrideProps(overrides, "Field0")}></TextField><Text children="Tell me your age" {...getOverrideProps(overrides, "SectionalElement1")}></Text><TextField label="Age" placeholder="あなたの年齢を入れて下さい。" type="number" step="any" value={Field1} onChange={e => {
             let { value } = e.target;
             if (onChange) {
                 const modelFields = {
